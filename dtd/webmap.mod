@@ -43,7 +43,8 @@
 
 <!ENTITY % webmap.content 
  "(
-      (%page;)*
+    (%websitetitle;)?,
+    (%page;)*
   )
  "
 >
