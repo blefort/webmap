@@ -44,6 +44,8 @@
 <!ENTITY % webmap.content 
  "(
     (%websitetitle;)?,
+    (%homepage;)?,
+    (%pageset;)*,
     (%page;)*
   )
  "
