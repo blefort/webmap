@@ -95,6 +95,7 @@
                          %d4p_enumerationMap-d-topicref;
                         ">
 
+
 <!ENTITY % topicmeta "topicmeta 
 
                       ">
@@ -102,6 +103,15 @@
 <!ENTITY % title "title |
                   %webmap-d-title;
                   ">
+
+<!ENTITY % homepage "homepage" >                
+<!ENTITY % page     "page" >
+<!ENTITY % pageset  "pageset" >
+<!ENTITY % template "template" >
+<!ENTITY % nav "nav" >
+<!ENTITY % header "header" >
+<!ENTITY % footer "footer" >
+
 
 <!ENTITY % index-base   "index-base | 
                          %indexing-d-index-base;
