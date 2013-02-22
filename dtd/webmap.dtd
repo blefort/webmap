@@ -40,6 +40,14 @@
 "mapGroup.ent"                                                 >
 %mapgroup-d-dec;
 
+
+<!ENTITY % webmeta-d-dec 
+                        PUBLIC 
+"urn:pubid:dita4publishers.sourceforge.net:entities:dtd:webMetadataDomain" 
+"webMetadataDomain.ent"                                                 
+>
+%webmeta-d-dec;
+
 <!ENTITY % webmap-d-dec 
                         PUBLIC 
 "urn:pubid:dita4publishers.sourceforge.net:entities:dtd:webmapDomain" 
@@ -96,8 +104,9 @@
                         ">
 
 
-<!ENTITY % topicmeta "topicmeta 
-
+<!ENTITY % topicmeta "topicmeta |
+					   %webmap-d-topicref; |
+					   %webmeta-d-topicmeta;
                       ">
 
 <!ENTITY % title "title |
@@ -107,7 +116,6 @@
 <!ENTITY % homepage "homepage" >                
 <!ENTITY % page     "page" >
 <!ENTITY % pageset  "pageset" >
-<!ENTITY % template "template" >
 <!ENTITY % nav "nav" >
 <!ENTITY % header "header" >
 <!ENTITY % footer "footer" >
@@ -170,6 +178,15 @@
 "-//OASIS//ELEMENTS DITA 1.2 Map Group Domain//EN" 
 "mapGroup.mod"                                                 >
 %mapgroup-d-def;
+
+
+
+<!ENTITY % webmapDomain-d-def PUBLIC 
+"urn:pubid:dita4publishers.sourceforge.net:modules:dtd:webMetadataDomain" 
+"webmapDomain.mod"                                                        >
+%webmapDomain-d-def;
+
+
 
 <!ENTITY % webmap-d-def PUBLIC 
 "urn:pubid:dita4publishers.sourceforge.net:modules:dtd:webmapDomain" 

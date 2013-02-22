@@ -45,10 +45,13 @@
 <!ENTITY % webmap.content 
  "(
     (%websitetitle;)?,
-    (%template;)?,
+    (%topicmeta;)?,
+    (%header;)?,
+    (%nav;)?,
     (%homepage;)?,
     (%pageset;)*,
-    (%page;)*
+    (%page;)*,
+    (%footer;)?
     
   )
  "
