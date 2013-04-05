@@ -99,7 +99,7 @@
 <!-- html5 nav element -->
 <!ENTITY % nav.content
     "
-    ((%topicref;)*)  
+    ((%topicmeta;)?,(%topicref;)*)  
     "
 >
 <!ENTITY % nav.attributes
@@ -119,7 +119,9 @@
 <!-- html5 header element -->
 <!ENTITY % header.content
     "
-    ((%topicref;)*)  
+    ( (%topicmeta;)?,
+      (%topicref;)*    
+    )  
     "
 >
 <!ENTITY % header.attributes
@@ -138,7 +140,8 @@
 <!-- html5 footer element -->
 <!ENTITY % footer.content
     "
-    ((%topicref;)*)  
+    ((%topicmeta;)?,
+    (%topicref;)*)  
     "
 >
 <!ENTITY % footer.attributes
@@ -158,7 +161,7 @@
 <!-- page -->
 <!ENTITY % page.content
     "
-     ((%widget;)?, (%topicref;)*)
+     ((%topicmeta;)?, (%webpagetitle;)?, (%widget;)?, (%topicref;)*)
     "
 >
 <!ENTITY % page.attributes
@@ -180,8 +183,10 @@
 
 <!-- pageset -->
 <!ENTITY % pageset.content
- 	"((%topicref;)* |
-      (%page;)*
+ 	"(
+ 	  (%topicmeta;)?, 
+ 	  ((%topicref;)* |
+      (%page;)*)
     )"
 >
 
@@ -206,9 +211,17 @@
 <!-- ============================================================= -->
 
 
-<!ATTLIST webmap      %global-atts;  class CDATA "- map/map webmap/webmap ">
-<!ATTLIST pageset     %global-atts; class CDATA "+ webmap-d/template ">
-<!ATTLIST page          %global-atts; class CDATA "+ webmap-d/page ">
-<!ATTLIST homepage          %global-atts; class CDATA "+ webmap-d/page webmap-d/homepage ">
-<!ATTLIST pageset          %global-atts; class CDATA "+ webmap-d/pageset ">
+<!ATTLIST footer      %global-atts; class CDATA "+ webmap-d/footer ">
+<!ATTLIST homepage    %global-atts; class CDATA "+ webmap-d/page webmap-d/homepage ">
+<!ATTLIST header      %global-atts; class CDATA "+ webmap-d/header ">
+<!ATTLIST nav         %global-atts; class CDATA "+ webmap-d/nav ">
+<!ATTLIST page        %global-atts; 
+					  class CDATA "+ webmap-d/page 
+					  ">
+<!ATTLIST pageset     %global-atts; class CDATA "+ webmap-d/pageset ">
+
+
+
+
+<!ATTLIST webmap      %global-atts; class CDATA "- map/map webmap/webmap ">
 <!-- ================== End webmap Declaration Set  ===================== -->

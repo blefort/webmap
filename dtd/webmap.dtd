@@ -12,7 +12,10 @@
 <!--                    PUBLIC DOCUMENT TYPE DEFINITION            -->
 <!--                    TYPICAL INVOCATION                         -->
 <!--                                                               -->
-
+<!--  Refer to this file by the following public identifier or an 
+      appropriate system identifier 
+PUBLIC "urn:pubid:dita4publishers.sourceforge.net:doctypes:dita:dtd:webmap"
+      Delivered as file "webmap.dtd"                               -->
  
 <!-- ============================================================= -->
 <!-- SYSTEM:     Darwin Information Typing Architecture (DITA)     -->
