@@ -45,10 +45,10 @@
 <!ENTITY % webmap.content 
  "(
     (%websitetitle;)?,
-    (%topicmeta;)?,
+    (%webmeta;)?,
     (%header;)?,
     (%nav;)?,
-    (%homepage;)?,
+    (%homepage;),
     (%pageset;)*,
     (%page;)*,
     (%footer;)?
@@ -85,7 +85,6 @@
 >
 <!ENTITY % template.attributes
 "   id                  ID          #IMPLIED
-    destinationuri                 CDATA      #IMPLIED
     %conref-atts;
     anchorref           CDATA       #IMPLIED
     outputclass         CDATA       #IMPLIED
@@ -161,12 +160,21 @@
 <!-- page -->
 <!ENTITY % page.content
     "
-     ((%topicmeta;)?, (%webpagetitle;)?, (%widget;)?, (%topicref;)*)
+     ((%webmeta;)?, (%webpagetitle;)?, (%widget;)?, (%topicref;)*)
     "
 >
 <!ENTITY % page.attributes
 "   id                  ID          #IMPLIED
-    destinationuri                 CDATA      #IMPLIED
+    destination         CDATA      #IMPLIED
+    %conref-atts;
+    anchorref           CDATA       #IMPLIED
+    outputclass         CDATA       #IMPLIED
+    %localization-atts;
+    %topicref-atts;
+    %select-atts;"
+>
+<!ENTITY % homepage.attributes
+"   id                  ID          #IMPLIED
     %conref-atts;
     anchorref           CDATA       #IMPLIED
     outputclass         CDATA       #IMPLIED
@@ -178,13 +186,13 @@
 <!ELEMENT page    %page.content;>
 <!ATTLIST page    %page.attributes;>
 <!ELEMENT homepage    %page.content;>
-<!ATTLIST homepage    %page.attributes;>
+<!ATTLIST homepage    %homepage.attributes;>
 
 
 <!-- pageset -->
 <!ENTITY % pageset.content
  	"(
- 	  (%topicmeta;)?, 
+ 	  (%webmeta;)?, 
  	  ((%topicref;)* |
       (%page;)*)
     )"
@@ -211,17 +219,13 @@
 <!-- ============================================================= -->
 
 
-<!ATTLIST footer      %global-atts; class CDATA "+ webmap-d/footer ">
-<!ATTLIST homepage    %global-atts; class CDATA "+ webmap-d/page webmap-d/homepage ">
-<!ATTLIST header      %global-atts; class CDATA "+ webmap-d/header ">
-<!ATTLIST nav         %global-atts; class CDATA "+ webmap-d/nav ">
-<!ATTLIST page        %global-atts; 
-					  class CDATA "+ webmap-d/page 
-					  ">
-<!ATTLIST pageset     %global-atts; class CDATA "+ webmap-d/pageset ">
+<!ATTLIST footer      %global-atts; class CDATA "+ map/topicref mapgroup-d/topicset webmap-d/footer ">
+<!ATTLIST homepage    %global-atts; class CDATA "+ map/topicref mapgroup-d/topicset webmap-d/page webmap-d/homepage ">
+<!ATTLIST header      %global-atts; class CDATA "+ map/topicref mapgroup-d/topicset webmap-d/header ">
+<!ATTLIST nav         %global-atts; class CDATA "+ map/topicref mapgroup-d/topicset webmap-d/nav ">
+<!ATTLIST pageset     %global-atts; class CDATA "+ map/topicref mapgroup-d/topicset webmap-d/pageset ">
 
-
-
+<!ATTLIST page        %global-atts; class CDATA "+ map/topicref mapgroup-d/topichead webmap-d/page ">
 
 <!ATTLIST webmap      %global-atts; class CDATA "- map/map webmap/webmap ">
 <!-- ================== End webmap Declaration Set  ===================== -->

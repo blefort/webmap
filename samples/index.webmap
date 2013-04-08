@@ -2,13 +2,17 @@
 <!DOCTYPE webmap PUBLIC "urn:pubid:dita4publishers.sourceforge.net:doctypes:dita:dtd:webmap" "webmap.dtd">
 <webmap>
     <websitetitle>Eclipse content aggregated by a map</websitetitle>
-    <page destinationuri="concepts/concepts">
+
+    <webmeta>
+        <script async="async" defer="defer" type="ddddd" ></script>
+    </webmeta>
+
+    <homepage> </homepage>
+
+    <page destination="concepts/concepts">
         <webpagetitle>
             <topicmeta>
                 <navtitle>Some garage concepts</navtitle>
-                <keywords>
-                    <keyword></keyword>
-                </keywords>
             </topicmeta>
         </webpagetitle>
         <topicref href="concepts/lawnmower.xml" type="concept"/>
@@ -23,5 +27,5 @@
         <topicref href="concepts/workbench.xml" type="concept"/>
         <topicref href="concepts/wwfluid.xml" type="concept"/>
     </page>
-    <page></page>
+    <page/>
 </webmap>
