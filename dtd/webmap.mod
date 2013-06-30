@@ -219,13 +219,14 @@
 <!-- ============================================================= -->
 
 
-<!ATTLIST footer      %global-atts; class CDATA "+ map/topicref mapgroup-d/topicset webmap-d/footer ">
-<!ATTLIST homepage    %global-atts; class CDATA "+ map/topicref mapgroup-d/topicset webmap-d/page webmap-d/homepage ">
-<!ATTLIST header      %global-atts; class CDATA "+ map/topicref mapgroup-d/topicset webmap-d/header ">
-<!ATTLIST nav         %global-atts; class CDATA "+ map/topicref mapgroup-d/topicset webmap-d/nav ">
-<!ATTLIST pageset     %global-atts; class CDATA "+ map/topicref mapgroup-d/topicset webmap-d/pageset ">
+<!ATTLIST footer      %global-atts; class CDATA " + map/topicref mapgroup-d/topicset webmap-d/footer ">
+<!ATTLIST homepage    %global-atts; class CDATA " + map/topicref mapgroup-d/topicset webmap-d/page webmap-d/homepage ">
+<!ATTLIST header      %global-atts; class CDATA " + map/topicref mapgroup-d/topicset webmap-d/header ">
+<!ATTLIST nav         %global-atts; class CDATA " + map/topicref mapgroup-d/topicset webmap-d/nav ">
+<!ATTLIST pageset     %global-atts; class CDATA " + map/topicref mapgroup-d/topicset webmap-d/pageset ">
 
-<!ATTLIST page        %global-atts; class CDATA "+ map/topicref mapgroup-d/topichead webmap-d/page ">
+<!ATTLIST page        %global-atts; class CDATA "+ map/topicref mapgroup-d/topicset webmap-d/page ">
+<!ATTLIST homepage    %global-atts; class CDATA "+ map/topicref mapgroup-d/topicset webmap-d/page webmap-d/homepage ">
 
 <!ATTLIST webmap      %global-atts; class CDATA "- map/map webmap/webmap ">
 <!-- ================== End webmap Declaration Set  ===================== -->
