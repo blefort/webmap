@@ -4,10 +4,16 @@
     <websitetitle>Eclipse content aggregated by a map</websitetitle>
 
     <webmeta>
-        <script async="async" defer="defer" type="ddddd" ></script>
+        <script async="async" defer="defer" type="application-javascript" ></script>
     </webmeta>
 
-    <homepage> </homepage>
+    <homepage>
+        <webpagetitle>
+            <topicmeta>
+                <navtitle>A garage documentation</navtitle>
+            </topicmeta>
+        </webpagetitle>
+    </homepage>
 
     <page destination="concepts/concepts">
         <webpagetitle>
