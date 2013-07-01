@@ -41,6 +41,7 @@
 <!--                    ELEMENT DECLARATIONS                       -->
 <!-- ============================================================= -->
 
+
 <!-- webmap -->
 <!ENTITY % webmap.content 
  "(
@@ -160,7 +161,7 @@
 <!-- page -->
 <!ENTITY % page.content
     "
-     ((%webmeta;)?, (%webpagetitle;)?, (%widget;)?, (%topicref;)*)
+     ((%webmeta;)?, (%webpagetitle;)?, ((%widget;) | (%layout;) | (%topicref;))*)
     "
 >
 <!ENTITY % page.attributes
@@ -219,14 +220,15 @@
 <!-- ============================================================= -->
 
 
-<!ATTLIST footer      %global-atts; class CDATA " + map/topicref mapgroup-d/topicset webmap-d/footer ">
-<!ATTLIST homepage    %global-atts; class CDATA " + map/topicref mapgroup-d/topicset webmap-d/page webmap-d/homepage ">
-<!ATTLIST header      %global-atts; class CDATA " + map/topicref mapgroup-d/topicset webmap-d/header ">
-<!ATTLIST nav         %global-atts; class CDATA " + map/topicref mapgroup-d/topicset webmap-d/nav ">
-<!ATTLIST pageset     %global-atts; class CDATA " + map/topicref mapgroup-d/topicset webmap-d/pageset ">
+<!ATTLIST webmap      %global-atts; class CDATA "- map/map webmap/webmap ">
+
+<!ATTLIST footer      %global-atts; class CDATA "+ map/topicref mapgroup-d/topicset webmap-d/footer ">
+<!ATTLIST homepage    %global-atts; class CDATA "+ map/topicref mapgroup-d/topicset webmap-d/page webmap-d/homepage ">
+<!ATTLIST header      %global-atts; class CDATA "+ map/topicref mapgroup-d/topicset webmap-d/header ">
+<!ATTLIST nav         %global-atts; class CDATA "+ map/topicref mapgroup-d/topicset webmap-d/nav ">
+<!ATTLIST pageset     %global-atts; class CDATA "+ map/topicref mapgroup-d/topicset webmap-d/pageset ">
 
 <!ATTLIST page        %global-atts; class CDATA "+ map/topicref mapgroup-d/topicset webmap-d/page ">
-<!ATTLIST homepage    %global-atts; class CDATA "+ map/topicref mapgroup-d/topicset webmap-d/page webmap-d/homepage ">
 
-<!ATTLIST webmap      %global-atts; class CDATA "- map/map webmap/webmap ">
+
 <!-- ================== End webmap Declaration Set  ===================== -->

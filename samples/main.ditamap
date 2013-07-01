@@ -14,6 +14,30 @@
             </topicmeta>
         </webpagetitle>
     </homepage>
+    
+    
+    <page destination="layout-example">
+        <webpagetitle>
+            <topicmeta>
+                <navtitle>Layout examples</navtitle>
+            </topicmeta>
+        </webpagetitle>
+        
+        <layout>
+            <columns size="12">
+                <column size="3" prepend="1" outputclass="colborder">
+                   <topic-extract-block href="concepts/oil.xml" type="concept"/>
+                </column>
+                <column size="4">
+                    <topic-extract-block href="concepts/garageconceptsoverview.xml"/>
+                </column>
+                <column size="4">
+                    <topic-extract-block href="concepts/paint.xml"/>                  
+                </column>
+            </columns>
+        </layout>
+     
+    </page>
 
     <page destination="concepts/concepts">
         <webpagetitle>
@@ -33,5 +57,5 @@
         <topicref href="concepts/workbench.xml" type="concept"/>
         <topicref href="concepts/wwfluid.xml" type="concept"/>
     </page>
-    <page/>
+
 </webmap>
