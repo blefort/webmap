@@ -69,6 +69,7 @@
 <!ELEMENT webmap       
   %webmap.content;                  
 >
+<!-- FIX ME -->
 <!ATTLIST webmap
   %webmap.attributes;
   %arch-atts;
@@ -161,12 +162,12 @@
 <!-- page -->
 <!ENTITY % page.content
     "
-     ((%webmeta;)?, (%webpagetitle;)?, ((%widget;) | (%layout;) | (%topicref;))*)
+     ((%webmeta;)?, (%webpagetitle;)?, ((%widget;) | (%layout;) | (%topicref;) | (%sectioning.elements;))*)
     "
 >
 <!ENTITY % page.attributes
 "   id                  ID          #IMPLIED
-    destination         CDATA      #IMPLIED
+    destination            CDATA       #IMPLIED
     %conref-atts;
     anchorref           CDATA       #IMPLIED
     outputclass         CDATA       #IMPLIED
