@@ -2,11 +2,16 @@
 <!DOCTYPE webmap PUBLIC "urn:pubid:dita4publishers.sourceforge.net:doctypes:dita:dtd:webmap" "webmap.dtd">
 <webmap>
     <websitetitle>Eclipse content aggregated by a map</websitetitle>
-
+    
     <webmeta>
         <script async="async" defer="defer" type="application-javascript" ></script>
     </webmeta>
-
+    
+    <!-- 
+        needs of keydef here 
+        will have to support @destination
+    -->
+    
     <homepage>
         <webpagetitle>
             <topicmeta>
@@ -17,29 +22,49 @@
     
     
     <page destination="layout-example">
+        
         <webpagetitle>
             <topicmeta>
                 <navtitle>Layout examples</navtitle>
             </topicmeta>
         </webpagetitle>
         
-        <layout>
-            <columns size="12">
-                <column size="3" prepend="1" outputclass="colborder">
-                   <topic-extract-block href="concepts/oil.xml" type="concept"/>
-                </column>
-                <column size="4">
-                    <topic-extract-block href="concepts/garageconceptsoverview.xml"/>
-                </column>
-                <column size="4">
-                    <topic-extract-block href="concepts/paint.xml"/>                  
-                </column>
-            </columns>
-        </layout>
-     
+        <article>
+            <topicmeta>
+                <navtitle>Columns example</navtitle>
+            </topicmeta>
+           
+            <layout>
+                <columns size="12">
+                    <column size="3" prepend="1" outputclass="colborder">
+                        <topic-extract-block href="concepts/oil.xml" type="concept"/>
+                    </column>
+                    <column size="4">
+                        <topic-extract-block href="concepts/garageconceptsoverview.xml"/>
+                    </column>
+                    <column size="4">
+                        <topic-extract-block href="concepts/paint.xml"/>                  
+                    </column>
+                </columns>
+            </layout> 
+            
+            <widget type="tabs">
+                <topicref href="concepts/lawnmower.xml" type="concept"/>
+                <topicref href="concepts/oil.xml" type="concept"/>
+                <topicref href="concepts/paint.xml" type="concept"/>
+            </widget>
+            
+            <widget type="carousel">
+                <topicref href="concepts/lawnmower.xml" type="concept"/>
+                <topicref href="concepts/oil.xml" type="concept"/>
+                <topicref href="concepts/paint.xml" type="concept"/>
+            </widget>
+            
+            
+        </article>
     </page>
-
-    <page destination="concepts/concepts">
+    
+    <page destination="first-level/second-level-page-example">
         <webpagetitle>
             <topicmeta>
                 <navtitle>Some garage concepts</navtitle>
@@ -57,5 +82,5 @@
         <topicref href="concepts/workbench.xml" type="concept"/>
         <topicref href="concepts/wwfluid.xml" type="concept"/>
     </page>
-
+    
 </webmap>
