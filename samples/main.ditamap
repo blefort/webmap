@@ -37,16 +37,34 @@
             <layout>
                 <columns size="12">
                     <column size="3" prepend="1" outputclass="colborder">
-                        <topic-extract-block href="concepts/oil.xml" type="concept"/>
+                        <render-topicref as="block">
+                            <topicref href="concepts/oil.xml" type="concept"/>
+                        </render-topicref>
                     </column>
                     <column size="4">
-                        <topic-extract-block href="concepts/garageconceptsoverview.xml"/>
+                        <render-topicref as="block">
+                            <topicref href="concepts/garageconceptsoverview.xml"/>
+                        </render-topicref>
                     </column>
                     <column size="4">
-                        <topic-extract-block href="concepts/paint.xml"/>                  
+                        <render-topicref as="block">
+                         <topicref href="concepts/paint.xml"/> 
+                        </render-topicref>
                     </column>
                 </columns>
-            </layout> 
+            </layout>            
+        </article>
+        
+        <section>
+            <topicmeta>
+                <navtitle>Section</navtitle>
+            </topicmeta>
+        </section>
+            
+        <main>
+            <topicmeta>
+                <navtitle>Main content</navtitle>
+            </topicmeta>
             
             <widget type="tabs">
                 <topicref href="concepts/lawnmower.xml" type="concept"/>
@@ -60,8 +78,9 @@
                 <topicref href="concepts/paint.xml" type="concept"/>
             </widget>
             
-            
-        </article>
+        </main>
+        
+ 
     </page>
     
     <page destination="first-level/second-level-page-example">
