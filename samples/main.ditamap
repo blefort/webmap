@@ -37,19 +37,19 @@
             <layout>
                 <columns size="12">
                     <column size="3" prepend="1" outputclass="colborder">
-                        <render-topicref as="block">
+                        <render-block>
                             <topicref href="concepts/oil.xml" type="concept"/>
-                        </render-topicref>
+                        </render-block>
                     </column>
                     <column size="4">
-                        <render-topicref as="block">
+                        <render-block>
                             <topicref href="concepts/garageconceptsoverview.xml"/>
-                        </render-topicref>
+                        </render-block>
                     </column>
                     <column size="4">
-                        <render-topicref as="block">
+                        <render-block>
                          <topicref href="concepts/paint.xml"/> 
-                        </render-topicref>
+                        </render-block>
                     </column>
                 </columns>
             </layout>            
