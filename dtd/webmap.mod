@@ -75,7 +75,7 @@
   %arch-atts;
   domains    
     CDATA                
-    "(map mapgroup-d) (map webmap-d) (map pubmeta-d) (map d4p_enumerationMap-d) &included-domains;"    
+    "(map mapgroup-d) (map webmap-d) (map webmeta-d) (map d4p_enumerationMap-d) &included-domains;"    
 >
 
 
@@ -162,7 +162,7 @@
 <!-- page -->
 <!ENTITY % page.content
     "
-     ((%webmeta;)?, (%webpagetitle;)?, ((%widget;) | (%layout;) | (%topicref;) | (%sectioning.elements;))*)
+      ((%webmeta;)?, (%webpagetitle;)?, ((%widget;) | (%layout;) | (%topicref;) | (%sectioning.elements;))*)
     "
 >
 <!ENTITY % page.attributes
